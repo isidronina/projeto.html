@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    margin-top: -31px;
+}
+
+.login-box {
+    background: linear-gradient(to right, #000000, #3332c8);
+    padding: 60px 18px;
+    border-radius: 25px;
+    width: 240px;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.role {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.register-link {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 30px; /* Aumente o valor para ajustar o espaço desejado */
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrar {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration:none;
+    transition: background 0.3s ease;
+}
+
+.voltar {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff; 
+    color: #000; 
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none; 
+    transition: background 0.3s ease;
+}
+
+.voltar:hover {
+    background-color: #ddd; /* Mesma cor de hover do botão Entrar */
+}
+
+
+button:hover {
+    background-color: #ddd;
+}
+
+.footer-logo {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 20px;
+    color: #444;
+}
