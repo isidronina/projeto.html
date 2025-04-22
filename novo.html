@@ -9,16 +9,16 @@
             const login = document.getElementById('login').value;
             const senha = document.getElementById('senha').value;
             const botaoEntrar = document.getElementById('botao-entrar');
-            botaoEntrar.disabled = !(login && senha); // Habilita o botão se ambos os campos estiverem preenchidos
+            botaoEntrar.disabled = !(login && senha); 
         }
 
         function redirecionar() {
             const login = document.getElementById('login').value;
             const senha = document.getElementById('senha').value;
             if (login && senha) {
-                window.location.href = 'index.html'; // Redireciona para index.html
+                window.location.href = 'index.html'; 
             }
-            return false; // Impede o envio do formulário
+            return false;
         }
     </script>
 </head>
@@ -29,22 +29,27 @@
             <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <span>Store</span></h1>
         <div class="login-box">
             <a href="#" class="register-link">Faça seu cadastro</a>
-    
+            <div class="linha"></div>
             <form onsubmit="return redirecionar()">
-                <label for="login">Login</label>
-                <input type="text" id="login" name="login" required oninput="habilitarBotao()">
+                <label for="login" class="login-label">Login</label>
+                <input type="text" id="login" name="login" required oninput="habilitarBotao()" class="login-input">
 
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" required oninput="habilitarBotao()">
-
+                <label for="senha" class="senha-label">Senha</label>
+                <input type="password" id="senha" name="senha" required oninput="habilitarBotao()" class="senha-input">
+                
                 <div class="buttons">
                     <a href="index.html" class="voltar">Voltar</a>
-                    <button type="submit" id="botao-entrar" class="voltar" disabled>Entrar</button> <!-- Modificado -->
+                    <button type="submit" id="botao-entrar" class="entrar" disabled>Entrar</button>
                 </div>
                 
             </form>
         </div>
-        <p class="footer-logo">Salotti</p>
+        <div class="logo-container">
+            <h2 class="main-word">Salotti</h2>
+            <p class="sub-word">Devs</p>
+        </div>
+
+        
     </div>
 </body>
 </html>
