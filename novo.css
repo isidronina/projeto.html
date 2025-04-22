@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #eaeaea;
+    background-color: #e8e8e8;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -25,23 +25,24 @@ body {
     font-style: normal;
     font-family: 'Great Vibes', cursive;
     font-size: 60px;
-    color: #000000;
+    color: #000000; 
     margin-bottom: 20px;
 }
 
 .logo span {
     font-family: Arial, sans-serif;
-    font-size: 22px;
+    font-size: 26px;
     color: #ffffff;
     display: block;
+    text-shadow: 3px 0 2px rgb(0, 0, 0); 
     margin-top: -31px;
 }
 
 .login-box {
     background: linear-gradient(to right, #000000, #3332c8);
-    padding: 60px 18px;
-    border-radius: 25px;
-    width: 240px;
+    padding: 40px 20px;
+    border-radius: 27px;
+    width: 281px;
     color: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
@@ -53,21 +54,33 @@ body {
 
 .register-link {
     color: #ffffff;
+    font-family: 'Lora';
     font-weight: bold;
-    font-size: 13px;
+    font-size: 17px;
     display: block;
-    margin-bottom: 30px; /* Aumente o valor para ajustar o espaço desejado */
+    margin-bottom: 8px; 
     text-decoration: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: px solid #fff;
     width: max-content;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 2px;
+    
 }
 
 form {
     text-align: left;
 }
+
+.linha {
+    margin-bottom: 100px;
+    width: 235px; 
+    height: 1px;  
+    background-color: #f8f7f7; 
+    margin: 20px auto; 
+    
+}
+
 
 label {
     display: block;
@@ -78,44 +91,67 @@ label {
 input[type="text"],
 input[type="password"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 15px;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     outline: none;
 }
 
 .buttons {
     display: flex;
     justify-content: space-between;
+    margin-top: 27px;
 }
 
+.login-label,
+.senha-label {
+    font-family: 'Lora';
+    color: #ffffff;
+    font-size: 18px; 
+    margin-top: 13px;
+}
+
+.login-input,
+.senha-input {
+    font-family: 'Arial', sans-serif;
+    color: #000000; 
+    font-size: 16px; 
+
+}
+
+
+
 .entrar {
-    padding: 8px 16px;
+    padding: 10px 31px;
     border: none;
-    border-radius: 6px;
+    border-radius: 13px;
     background-color: #ffffff;
-    color: #000;
+    color: #545454;
+    font-family: 'Open-sans', sans-serif;
+    font-style: normal;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    text-decoration:none;
+    text-decoration: none;
     transition: background 0.3s ease;
 }
 
 .voltar {
-    padding: 8px 16px;
+    padding: 10px 31px;
     border: none;
-    border-radius: 6px;
+    border-radius: 13px;
     background-color: #ffffff; 
-    color: #000; 
+    color: #545454; 
     font-weight: bold;
+    font-size: 18px;
     cursor: pointer;
     text-decoration: none; 
     transition: background 0.3s ease;
 }
 
 .voltar:hover {
-    background-color: #ddd; /* Mesma cor de hover do botão Entrar */
+    background-color: #ddd;
 }
 
 
@@ -123,11 +159,42 @@ button:hover {
     background-color: #ddd;
 }
 
-.footer-logo {
+.logo-container {
     position: absolute;
     right: 20px;
     bottom: 10px;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 20px;
-    color: #444;
+    font-weight: 400;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Great Vibes', cursive;
+    color: #000000;
+    margin-bottom: -10px;
+}
+
+.main-word {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    font-weight: 400;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    color: #000000;
+    text-shadow: 3px 0 2px rgb(0, 0, 0);
+    margin: 0;
+}
+
+.sub-word {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'chunkfive';
+    margin-top: 4px;
+    color: #ffffff;
+    margin-top: -35px;
+    text-shadow:
+    -1px -1px 0 rgb(15, 15, 15),
+    1px -1px 0 rgb(43, 42, 42),
+    -1px 1px 0 rgb(32, 32, 32),
+    1px 1px 0 rgb(39, 38, 38);
 }
